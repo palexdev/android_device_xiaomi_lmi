@@ -19,6 +19,9 @@ $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
+# Inherit from release keys		
+$(call inherit-product, vendor/extra/product.mk)
+
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
 TARGET_BOARD_PLATFORM := kona
