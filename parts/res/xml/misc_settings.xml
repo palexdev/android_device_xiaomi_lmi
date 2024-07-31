@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/misc_settings_title">
+
+    <SwitchPreferenceCompat
+        android:key="no_storage_restrict"
+        android:title="@string/no_storage_restrict_title"
+        android:summary="@string/no_storage_restrict_summary"
+        android:icon="@drawable/ic_lock_open"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="storage_show_all"
+        android:title="@string/storage_show_all_title"
+        android:summary="@string/storage_show_all_summary"
+        android:icon="@drawable/ic_visibility"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
