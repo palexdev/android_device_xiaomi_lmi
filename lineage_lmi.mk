@@ -12,25 +12,36 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
 # Inherit some common Ricedroid stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := blaze_lmi
+# Product Info
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon 865" \
+    RISING_MAINTAINER="palexdev"
+
+PRODUCT_NAME := rising_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO F2 Pro
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_USES_PICO_GAPPS := true
+
+# Features
 TARGET_DISABLE_EPPE := true
 
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := palexdev
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := false
 TARGET_UDFPS_ANIMATIONS := true
-WITH_GAPPS := true
+
+USE_GMS := true
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_ENABLE_PIXEL_FEATURES := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
