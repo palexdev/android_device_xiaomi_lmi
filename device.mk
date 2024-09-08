@@ -20,7 +20,7 @@ $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
 # Inherit from release keys		
-$(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
 
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
