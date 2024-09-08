@@ -139,9 +139,6 @@
     <!-- My Personal Settings -->
     <string name="misc_settings_title">Misc Settings by @palexdev</string>
 
-    <string name="no_storage_restrict_title">No Storage Restrict</string>
-    <string name="no_storage_restrict_summary">Removes the restriction when selecting folders through the file manager</string>
-
     <string name="storage_show_all_title">Show All Files</string>
     <string name="storage_show_all_summary">Makes the Android directory\'s contents visible again</string>
 </resources>

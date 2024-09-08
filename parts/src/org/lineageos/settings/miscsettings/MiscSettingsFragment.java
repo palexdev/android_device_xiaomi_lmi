@@ -11,14 +11,12 @@ import org.lineageos.settings.R;
 
 public class MiscSettingsFragment extends PreferenceFragment {
 
-    private static final String KEY_NO_STORAGE_RESTRICT = "no_storage_restrict";
     private static final String KEY_STORAGE_SHOW_ALL = "storage_show_all";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.misc_settings);
 
-        initSwitch(KEY_NO_STORAGE_RESTRICT);
         initSwitch(KEY_STORAGE_SHOW_ALL);
     }
 
