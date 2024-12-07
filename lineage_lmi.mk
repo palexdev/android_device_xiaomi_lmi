@@ -20,8 +20,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # Product Info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Snapdragon 865" \
-    RISING_MAINTAINER="palexdev"
+    RisingChipset="Snapdragon 865" \
+    RisingMaintainer="palexdev"
 
 PRODUCT_NAME := rising_lmi
 PRODUCT_DEVICE := lmi
