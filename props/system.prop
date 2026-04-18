@@ -79,3 +79,10 @@ ro.config.sdha_apps_bg_min=8
 
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
+
+# Infinity-X
+ro.product.marketname=Poco F2 Pro
+ro.infinity.soc=Snapdragon 865
+ro.infinity.battery=4700 mAh
+ro.infinity.display=6.67", 60Hz, 2400x1080
+ro.infinity.camera=64MP + 13MP + 2MP + 5MP
