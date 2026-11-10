@@ -28,7 +28,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 BUILD_FINGERPRINT := Redmi/lmi/lmi:12/SKQ1.211006.001/V14.0.1.0.SJKMIXM:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    ProductName=lmi_global \
+    DeviceProduct=lmi_global \
     SystemName=lmi_global
 
 # Infinity-X stuff
